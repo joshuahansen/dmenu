@@ -122,7 +122,7 @@ index e0c2f80..b4a6f70 100644
  			break;
  		case XK_u: /* delete left */
  			insert(NULL, 0 - cursor);
-@@ -444,7 +523,7 @@ keypress(XKeyEvent *ev)
+@@ -492,7 +523,7 @@ keypress(XKeyEvent *ev)
  		strncpy(text, sel->text, sizeof text - 1);
  		text[sizeof text - 1] = '\0';
  		cursor = strlen(text);
@@ -131,7 +131,7 @@ index e0c2f80..b4a6f70 100644
  		break;
  	}
  	drawmenu();
-@@ -586,7 +665,7 @@ setup(void)
+@@ -654,7 +665,7 @@ setup(void)
  	}
  	promptw = (prompt && *prompt) ? TEXTW(prompt) : 0;
  	inputw = MIN(inputw, mw/3);
